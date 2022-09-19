@@ -3,27 +3,23 @@ import "./styles.css";
 
 export default function App() {
   var [singer, setsinger] = useState("");
-  var [album, setalbum] = useState("");
-  var [dob, setdob] = useState("");
-  var [place, setplace] = useState("");
+  var [singer2, setsinger2] = useState("");
+  var [singer3, setsinger3] = useState("");
 
   function edmConcert() {
-    setsinger(" Singer- Justin Biber");
-    setalbum("Album- Justice");
-    setdob("DOB- 1 March 1994");
-    setplace("Rating-3.5/5");
+    setsinger("Justin Biber- (3/5) ");
+    setsinger2("John Martin- (4/5)");
+    setsinger3("Matthew Koma- (5/5)");
   }
   function classicalConcert() {
-    setsinger(" Singer- Ravi Shankar");
-    setalbum("Album- Music Of India - Three Classical Ragas On Sitar");
-    setdob("DOB- 7 April 1920 ");
-    setplace("Rating-4/5");
+    setsinger("Lata Mangeshkar- (5/5)");
+    setsinger2("Bhimsen Joshi- (3/5)");
+    setsinger3("Ravi Shankar- (3.5/5)");
   }
   function rockConcert() {
-    setsinger("  Singer- Kid Rock");
-    setalbum("Album- Cocky");
-    setdob("DOB- 17 January 1971");
-    setplace("Rating-3/5");
+    setsinger("Kid Rock- (4/5)");
+    setsinger2("HARDY- (4.5/5)");
+    setsinger3("Tech N9ne- (3/5)");
   }
 
   return (
@@ -40,9 +36,8 @@ export default function App() {
         Song's Guide
       </h1>
       <h2 style={{ backgroundColor: "white" }}>{singer}</h2>
-      <h2 style={{ backgroundColor: "white" }}>{album}</h2>
-      <h2 style={{ backgroundColor: "white" }}>{dob}</h2>
-      <h2 style={{ backgroundColor: "white" }}>{place}</h2>
+      <h2 style={{ backgroundColor: "white" }}>{singer2}</h2>
+      <h2 style={{ backgroundColor: "white" }}>{singer3}</h2>
 
       <button
         style={{
